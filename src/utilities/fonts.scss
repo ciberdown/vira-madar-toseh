@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Iranian Sans";
+  src: url("../../public/fonts/FontsFree-Net-ir_sans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "B Nazanin";
+  src: url("../../public/fonts/B-NAZANIN.TTF");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Iran Nastalig";
+  src: url("../../public/fonts/IranNastaliq.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.iranian-sans {
+  font-family: "Iranian Sans", sans-serif;
+}
+.b-nazanin {
+  font-family: "B Nazanin";
+}
+.iran-nastalig {
+  font-family: "Iran Nastalig";
+}
+
+@mixin iranian-sans {
+  font-family: "Iranian Sans", sans-serif;
+}
+@mixin b-nazanin {
+  font-family: "B Nazanin";
+}
+@mixin iran-nastalig {
+  font-family: "Iran Nastalig";
+}

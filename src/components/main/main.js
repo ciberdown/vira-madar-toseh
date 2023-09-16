@@ -5,7 +5,7 @@ import Navbar from "../navbar/nvabar";
 function Main() {
   return (
     <div className="main">
-      <Navbar data={['Home', 'info']}/>
+      <Navbar />
     </div>
   );
 }

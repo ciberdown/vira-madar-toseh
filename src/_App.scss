@@ -1,0 +1,5 @@
+@import './utilities/fonts.scss';
+
+.App{
+    @include iranian-sans;
+}
