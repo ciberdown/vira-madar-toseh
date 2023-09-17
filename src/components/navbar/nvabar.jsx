@@ -2,27 +2,38 @@ import React from "react";
 import "./_navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
+import NavBtns from "./btns_navbar_items";
 
-function Navbar() {
+function Navbar({ navbarIndex, setNavbarIndex }) {
   return (
     <div className="primary width-full flex justify-center">
-      <div className="navbar border-box height-100 width-full align-center flex justify-center p-10">
-        <p className="company-name flex-2 mt-20">ویرا برگ توسعه</p>
+      <div className="navbar border-box height-80 width-full align-center flex justify-center p-10">
+        <div className="circle"></div>
 
-        <div className="items align-center flex-4 flex mt-10 flex justify-start gap-20">
-          <Button variant="text" style={{ color: "white" }}>
-            خانه
-          </Button>
-          <Button variant="text" style={{ color: "white" }}>
-            محصولات
-          </Button>
-          <Button variant="text" style={{ color: "white" }}>
-            سایر
-          </Button>
-        </div>
+        <p className="company-name text-primary flex-2 mt-20">ویرا برگ توسعه</p>
 
-        <div className="align-right flex-2">
-          <MenuIcon style={{ color: "white", fontSize: "30px" }} />
+        <NavBtns navbarIndex={navbarIndex} setNavbarIndex={setNavbarIndex} />
+        <div className="circle circle-2"></div>
+
+        <input
+          className="search-box flex-3"
+          type="text"
+          placeholder="جست و جو ..."
+        />
+
+        <div
+          className="align-right flex-1 justify-center"
+          style={{ zIndex: 2 }}
+        >
+          <MenuIcon
+            className="burger text-primary mt-5"
+            sx={{
+              cursor: "pointer",
+              fontSize: "28px",
+              transition: "scale .1s linear",
+              ":hover": { scale: "1.2" },
+            }}
+          />
         </div>
       </div>
     </div>

@@ -1,3 +1,12 @@
+.hidden {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 .flex {
   display: flex;
 }
@@ -28,22 +37,20 @@
   }
 }
 
-
 @for $i from 1 through 40 {
-  .height-#{$i*5}{
-    height:#{$i*5}px ;
+  .height-#{$i*5} {
+    height: #{$i * 5}px;
   }
-  .width-#{$i*5}{
-    width:#{$i*5}px ;
+  .width-#{$i*5} {
+    width: #{$i * 5}px;
   }
 }
-
 
 @for $i from 1 through 100 {
   .m-#{$i} {
     margin: #{$i}px;
   }
-  .m-inline-#{$i}{
+  .m-inline-#{$i} {
     margin-inline: #{$i}px;
   }
   .ml-#{$i} {
@@ -62,7 +69,7 @@
   .p-#{$i} {
     padding: #{$i}px;
   }
-  .p-inline-#{$i}{
+  .p-inline-#{$i} {
     padding-inline: #{$i}px;
   }
   .pl-#{$i} {
@@ -83,11 +90,10 @@
   }
 }
 
-
-.width-full{
+.width-full {
   width: 100%;
 }
 
-.border-box{
+.border-box {
   box-sizing: border-box;
 }
