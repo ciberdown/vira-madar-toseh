@@ -10,7 +10,9 @@ function Navbar({ navbarIndex, setNavbarIndex }) {
       <div className="navbar border-box height-80 width-full align-center flex justify-center p-10">
         <div className="circle"></div>
 
-        <p className="company-name text-primary flex-2 mt-20">ویرا برگ توسعه</p>
+        <h1 className="company-name text-primary flex-2 mt-20">
+          ویرا برگ توسعه
+        </h1>
 
         <NavBtns navbarIndex={navbarIndex} setNavbarIndex={setNavbarIndex} />
         <div className="circle circle-2"></div>
