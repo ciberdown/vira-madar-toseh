@@ -1,6 +1,6 @@
 import React from "react";
 import "./_HomeCard.scss";
-import getRandomColor from "../../utilities/lightenColor";
+import getRandomColor from "../../utilities/colorHandler";
 
 function HomeCard({ item }) {
   console.log(item);

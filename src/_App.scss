@@ -1,5 +1,6 @@
-@import './utilities/fonts.scss';
+@import "./utilities/fonts.scss";
 
-.App{
-    @include iranian-sans;
+.App {
+  @include iranian-sans;
+  min-width: 350px;
 }

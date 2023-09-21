@@ -28,3 +28,9 @@ $circle-width: 250px;
     
   }
 }
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .home-item{
+    width: 500px;
+  }
+}
+
