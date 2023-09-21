@@ -1,7 +1,7 @@
 import React from "react";
 import "./_navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Button } from "@mui/material";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import NavBtns from "./btns_navbar_items";
 
 function Navbar({ navbarIndex, setNavbarIndex }) {
@@ -36,6 +36,7 @@ function Navbar({ navbarIndex, setNavbarIndex }) {
               ":hover": { scale: "1.2" },
             }}
           />
+          <MenuOpenIcon className="burger-2"  ></MenuOpenIcon>
         </div>
       </div>
     </div>

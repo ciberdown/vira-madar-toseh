@@ -1,0 +1,21 @@
+@import "../../utilities/breakpoints.scss";
+
+.home {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+  row-gap: 3%;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-inline: 6%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+}
